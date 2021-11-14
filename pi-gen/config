@@ -1,0 +1,6 @@
+IMG_NAME=piccolo_armhf
+TARGET_HOSTNAME=piccolo
+TIMEZONE_DEFAULT=Europe/Zurich
+FIRST_USER_NAME=pi
+FIRST_USER_PASS=piccolo
+ENABLE_SSH=1

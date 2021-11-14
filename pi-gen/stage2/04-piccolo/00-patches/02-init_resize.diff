@@ -1,0 +1,5 @@
+--- stage2.orig/rootfs/usr/lib/raspi-config/init_resize.sh
++++ stage2/rootfs/usr/lib/raspi-config/init_resize.sh
+@@ -169 +169 @@
+-  if ! parted -m "$ROOT_DEV" u s resizepart "$ROOT_PART_NUM" "$TARGET_END"; then
++  if ! parted -m "$ROOT_DEV" u % resizepart "$ROOT_PART_NUM" 100; then

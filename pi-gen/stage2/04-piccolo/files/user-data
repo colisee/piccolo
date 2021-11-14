@@ -1,0 +1,26 @@
+#cloud-config
+# vim: syntax=yaml
+#
+hostname: initialize
+manage_etc_hosts: true
+users:
+  - default:
+  - name: initialize
+    gecos: "Administrator"
+    sudo: ALL=(ALL) ALL
+    shell: /bin/bash
+    groups: adm, dialout, cdrom, docker, audio, video, plugdev, games, users, input, netdev, spi, i2c, gpio
+    plain_text_passwd: initialize
+    lock_passwd: false
+    ssh_pwauth: true
+    chpasswd: { expire: false }
+timezone: "Europe/Zurich"
+package_update: true
+package_upgrade: true
+package_reboot_if_required: true
+runcmd:
+  - [ /usr/lib/piccolo/finalize.sh ]
+power_state:
+  delay: now
+  mode: reboot
+  message: "Final reboot after cloud-init"

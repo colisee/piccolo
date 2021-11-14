@@ -1,0 +1,8 @@
+# /etc/cron.d/piccolo: crontab entries for the piccolo system
+#
+# Update the apt repository and upgrade installed packages
+#
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+0 3 * * * root if [ -x /usr/lib/piccolo/upgrade.sh ]; then /usr/lib/piccolo/upgrade.sh >> /var/log/piccolo.log 2>&1; fi

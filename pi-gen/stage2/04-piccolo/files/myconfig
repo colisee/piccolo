@@ -1,0 +1,12 @@
+#
+# Server name. Example myserver
+SERVER="change_me"
+#
+# The internet domain pointing to your server. Example: piccolo.duckdns.org
+DOMAIN="change_me"
+#
+# the administrator's user profile. Example: admin 	
+ADMIN_USER="change_me"
+#
+# the administrator's password
+ADMIN_PASSWORD="change_me"
