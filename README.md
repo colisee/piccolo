@@ -4,7 +4,7 @@
 - [Run the piccolo system](#run-the-piccolo-system)
 
 # Introduction
-`piccolo` is a linux operating system based on the raspios-lite and aims at running personal cloud services on a [raspberry-pi](https://www.raspberrypi.org/) device. 
+`piccolo` is a linux operating system based on raspios-lite and aims at running personal cloud services on a [raspberry-pi](https://www.raspberrypi.org/) device. 
 
 Compared to raspios-lite/pi-gen, `piccolo`:
 - Deactivates audio, bluetooth and wifi capabilities to reduce CPU and memory footprints
