@@ -58,10 +58,10 @@ The build-up of `piccolo` is based on the [pi-gen](https://github.com/RPi-Distro
 - Wait at least 5 minutes for the first boot sequence to complete, for the system will apply system upgrades (if any) and load the last versions of several required applications
 ## Accessing the raspberry-pi server for system administration purposes
 - Use a device (PC, tablet, smartphone) that is connected to the same network as the raspberry pi server
-- Open your web navigator and point it to https://*__value_of_field_SERVER_in_file_myconfig__*.local:9090 
+- Open your web navigator and point it to https://*value_of_field_SERVER_in_file_myconfig*.local:9090 
 - A certificate security warning will be displayed because the certificate is auto-signed. Accept the risk and proceed
 - Sign in with the administrator user credentials and check the option "Reuse my password for privileged tasks"
 ## Accessing the nextcloud service
-- Open your web navigator and point it to `https://cloud.*__value_of_field_DOMAIN_in_file_myconfig__*`
+- Open your web navigator and point it to https://cloud.*value_of_field_DOMAIN_in_file_myconfig*
 ## Accessing the wireguard web administration console
-- Open your navigator abd point it to `http://*__value_of_field_SERVER_in_file_myconfig__*.local:51821`
+- Open your navigator abd point it to http://*value_of_field_SERVER_in_file_myconfig*.local:51821
