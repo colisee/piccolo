@@ -9,7 +9,7 @@ users:
     gecos: "Administrator"
     sudo: ALL=(ALL) ALL
     shell: /bin/bash
-    groups: adm, dialout, cdrom, docker, audio, video, plugdev, games, users, input, netdev, spi, i2c, gpio
+    groups: sudo, docker, adm, dialout, cdrom, audio, video, plugdev, games, users, input, netdev, spi, i2c, gpio
     plain_text_passwd: initialize
     lock_passwd: false
     ssh_pwauth: true
