@@ -1,0 +1,22 @@
+--- stage2.orig/rootfs/boot/config.txt
++++ stage2/rootfs/boot/config.txt
+@@ -53,8 +53,17 @@
+ 
+ # Additional overlays and parameters are documented /boot/overlays/README
+ 
+-# Enable audio (loads snd_bcm2835)
+-dtparam=audio=on
++# Customize for piccolo
++## Disable audio (loads snd_bcm2835)
++dtparam=audio=off
++
++## Disable bluetooth and wifi
++dtoverlay=disable-bt
++dtoverlay=disable-wifi
++
++## Add 5-second delay on boot to allow for USB disk to spin and be ready
++bootcode_delay=5
++boot_delay=5
+ 
+ [pi4]
+ # Enable DRM VC4 V3D driver on top of the dispmanx display stack
