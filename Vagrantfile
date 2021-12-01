@@ -10,5 +10,8 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", inline: <<-SHELL
     apt-get update
     apt-get install -y docker.io
+    apt-get install -y --no-install-recommends quilt parted coreutils qemu-user-static debootstrap zerofree zip \
+      dosfstools libarchive-tools libcap2-bin rsync grep udev xz-utils curl xxd file kmod bc \
+      binfmt-support ca-certificates qemu-utils kpartx
   SHELL
 end
