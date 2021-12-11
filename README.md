@@ -10,7 +10,7 @@ Compared to raspios-lite/pi-gen, `piccolo`:
 - Deactivates audio, bluetooth and wifi capabilities to reduce CPU and memory footprints
 - Activates ssh
 - Creates an admin profile based on the values of a configuration file that must be customized before the system is booted the first time in order to improve security
-- Installs the software packages [docker.io](https://www.docker.com/), [cockpit-dashboard](https://cockpit-project.org)
+- Installs the software packages [cloud-init](https://cloud-init.io) [docker.io](https://www.docker.com/), [cockpit-dashboard](https://cockpit-project.org)
 - Implements a daily (at 03:00 local time) system upgrade and system reboot to keep the system in perfect security conditions
 - Loads and run the docker images:
   - [nginxproxy/nginx-proxy](https://github.com/nginx-proxy/nginx-proxy): reverse web proxy
